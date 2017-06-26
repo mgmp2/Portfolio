@@ -11,8 +11,32 @@ h1, h2, h3,
 h4, h5, h6 {
     font-family: 'Cuprum', sans-serif;
 }
+.justify-align {
+    text-align: justify;
+}
+.weight-700 {
+    font-weight: 700;
+}
+p {
+    font-size: 21px;
+}
 
+/*CONTACTO */
 
+#write-here {
+    display: flex;
+    justify-content: space-around;
+}
+
+#write-here * {
+    border-radius: 14px;
+}
+#contacto [class*="s6"] img {
+    height: 140px;
+}
+#contacto .container div:nth-child(2) * {
+    margin-bottom: 14px;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
