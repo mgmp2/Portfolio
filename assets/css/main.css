@@ -1,146 +1,169 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Orbitron');
+    @import url('https://fonts.googleapis.com/css?family=Merriweather|Orbitron');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Merriweather', serif;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Merriweather', serif;
+    }
 
-h1, h2, h3,
-h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;
-}
-.justify-align {
-    text-align: justify;
-}
-.weight-700 {
-    font-weight: 700;
-}
-p {
-    font-size: 21px;
-}
-/*MENU*/
-
-header img {
-  width: 56px;
-}
-nav {
-  background: purple;
-}
-.active {
-  position: relative;
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-/*BANNER*/
-#banner {
-  margin: 0;
-  background-image: url(../img/miriam_mendoza_pilco.jpg);
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#banner .card {
-  width: 90%;
-  text-align: center;
-  background-color: rgba(9, 19, 24, 0.55);
-  padding: 14px;
-}
-/*CONTACTO */
-#contacto {
-  height: 100vh;
-}
-#contacto p {
-    margin-bottom: 21px;
-}
-#write-here {
-    display: flex;
-    justify-content: space-around;
-}
-
-#write-here * {
-    border-radius: 14px;
-}
-#contacto [class*="s6"] img {
-    height: 140px;
-    margin-bottom: 14px;
-}
-#write-here {
-    margin-bottom: 21px;
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  h1 {
-    font-size: 6rem;
-  }
-  p {
-      font-size: 28px;
-  }
-    #write-here {
-        margin-bottom: 28px;
+    h1, h2, h3,
+    h4, h5, h6 {
+        font-family: 'Orbitron', sans-serif;
+    }
+    h1 {
+        color: #fff; //BUSCAR COLORES EN MATERIALIZE.CSS
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .card p {
+        color: gray; //BUSCAR COLORES EN MATERIALIZE.CSS
+    }
+    .justify-align {
+        text-align: justify;
+    }
+    .weight-700 {
+        font-weight: 700;
+    }
+    p {
+        font-size: 21px;
+    }
+    .title {
+        border-bottom: 3px solid rgb(79, 169, 193);
+        display: inline-block;
+        margin-bottom: 35px;
+    }
+    #contacto, #banner, #sobre-mi, #proyectos {
+      height: 100vh;
+    }
+    /*MENU*/
+    header img {
+      width: 56px;
+    }
+    nav {
+      background: #333D66; //BUSCAR COLORES EN MATERIALIZE.CSS
+    }
+    .active {
+        padding-top: 60px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .display-flex-end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /*BANNER*/
-
-    /*CONTACTO*/
-    #contacto [class*="s6"] img {
-        height: 182px;
+    #banner {
+      margin: 0;
+      background-image: url(../images/miriam_mendoza_pilco.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  h1 {
-    font-size: 7rem;
-    font-weight: 700;
-  }
-  p {
-    font-size: 24px;
-  }
-  /*MENU*/
-  header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-
-  header.LI-name-container{
-    position: relative;
-    z-index: 0;
-  }
-
-  nav img {
-    margin-left: 21px;
-  }
-  /*BANNER*/
-  #banner {
-    background-position-y: 100%;
-    align-items: initial;
-    left: 21px;
-  }
-  #banner .card {
-    width: 60%;
-    padding: 21px;
-    left: 21px;
-  }
-  /*CONTACTO*/
-  #contacto {
-    margin-top: 42px;
-  }
-  #contacto [class*="s6"] img {
-      height: 140px;
-      border: 2px solid #000;
+    #banner .card {
+      width: 90%;
+      text-align: center;
+      background-color: rgba(9, 19, 24, 0.55); //BUSCAR COLORES EN MATERIALIZE.CSS
       padding: 14px;
-      border-radius: 14px;
-      margin-bottom: 28px;
-  }
-}
+    }
+    /*CONTACTO */
+
+    #contacto p {
+        margin-bottom: 21px;
+    }
+    #write-here {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #write-here * {
+        border-radius: 14px;
+    }
+    #contacto [class*="s6"] img {
+        height: 140px;
+        margin-bottom: 14px;
+    }
+    #write-here {
+        margin-bottom: 21px;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 6rem;
+      }
+      p {
+          font-size: 28px;
+      }
+        #write-here {
+            margin-bottom: 28px;
+        }
+        /*BANNER*/
+
+        /*CONTACTO*/
+        #contacto [class*="s6"] img {
+            height: 182px;
+        }
+    }
+
+    /* Medium devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+
+          h1 {
+            font-size: 6rem;
+          }
+            h3 {
+                font-size: 2.8rem;
+            }
+          p {
+            font-size: 21px;
+          }
+          /*MENU*/
+          header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+          }
+
+      header.LI-name-container{
+        position: relative;
+        z-index: 0;
+      }
+
+      nav img {
+        margin-left: 21px;
+      }
+      /*BANNER*/
+      #banner {
+         margin-top: 64px;
+        background-position-y: 100%;
+        align-items: initial;
+        left: 21px;
+      }
+      #banner .card {
+        width: 60%;
+        padding: 21px;
+        left: 21px;
+      }
+      /*CONTACTO*/
+      #contacto {
+        margin-top: 42px;
+      }
+      #contacto [class*="s6"] img {
+          height: 140px;
+          border: 2px solid #000;
+          padding: 14px;
+          border-radius: 14px;
+          margin-bottom: 28px;
+      }
+    }
