@@ -56,6 +56,12 @@
         justify-content: center;
         align-items: center;
     }
+    .overflow {
+      overflow: hidden;
+    }
+    .visible {
+      visibility: visible!important;
+    }
     /*BANNER*/
     #banner {
       margin: 0;
@@ -73,6 +79,40 @@
       text-align: center;
       background-color: rgba(9, 19, 24, 0.55); //BUSCAR COLORES EN MATERIALIZE.CSS
       padding: 14px;
+    }
+    /*PROYECTOS*/
+    #proyectos .square{
+      position: relative;
+      cursor: pointer
+    }
+    #proyectos .square span {
+      position: absolute;
+      top: 0;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      padding: 21px;
+    }
+    #proyectos .square span * {
+      visibility: hidden;
+      color: blue;
+    }
+    #proyectos .square span:hover {
+      background: #fff;
+      border: 1px solid #00fffc;
+      transition: all 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .modal a {
+      display: block;
+      padding-bottom: 21px;
+      text-decoration: underline;
+    }
+    .port-imagen img {
+      width: 35px;
     }
     /*CONTACTO */
 
@@ -107,7 +147,9 @@
             margin-bottom: 28px;
         }
         /*BANNER*/
-
+        #sobre-mi, #contacto {
+          height: auto;
+        }
         /*CONTACTO*/
         #contacto [class*="s6"] img {
             height: 182px;
