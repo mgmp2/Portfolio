@@ -11,14 +11,15 @@
     h4, h5, h6 {
         font-family: 'Orbitron', sans-serif;
     }
-    h1 {
-        color: #fff; //BUSCAR COLORES EN MATERIALIZE.CSS
-    }
     h2 {
         font-size: 2rem;
     }
+    #banner, #sobre-mi, #habilidades, #proyectos,
+    #contacto {
+      padding-top: 64px;
+      padding-bottom: 32px;
+    }
     .card p {
-      color: rgb(198, 195, 195); //BUSCAR COLORES EN MATERIALIZE.CSS
       font-size: 27px;
     }
     .justify-align {
@@ -35,15 +36,13 @@
         display: inline-block;
         margin-bottom: 35px;
     }
-    #contacto, #banner, #sobre-mi, #proyectos {
-      height: 100vh;
-    }
+
     /*MENU*/
     header img {
       width: 56px;
     }
     nav {
-      background: #333D66; //BUSCAR COLORES EN MATERIALIZE.CSS
+      background: #333D66;
     }
     .active {
         padding-top: 60px;
@@ -66,6 +65,7 @@
     /*BANNER*/
     #banner {
       margin: 0;
+      height: 100vh;
       background-image: url(../images/miriam_mendoza_pilco.jpg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -81,10 +81,13 @@
       background-color: rgba(9, 19, 24, 0.55); //BUSCAR COLORES EN MATERIALIZE.CSS
       padding: 14px;
     }
+    /*ABOUT ME*/
+
     /*PROYECTOS*/
     #proyectos .square{
       position: relative;
-      cursor: pointer
+      cursor: pointer;
+      height: 490px;
     }
     #proyectos .square span {
       position: absolute;
@@ -96,7 +99,6 @@
     }
     #proyectos .square span * {
       visibility: hidden;
-      color: blue;
     }
     #proyectos .square span:hover {
       background: #fff;
@@ -106,6 +108,11 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+    }
+    #proy-1, #proy-2, #proy-3,
+    #proy-4, #proy-5, #proy-6 {
+      width: 20%!important;
+      background-color: rgba(250, 250, 250, 0.93);
     }
     .modal a {
       display: block;
@@ -142,7 +149,7 @@
         font-size: 6rem;
       }
       p {
-          font-size: 28px;
+          font-size: 17px;
       }
         #write-here {
             margin-bottom: 28px;
@@ -178,10 +185,10 @@
             z-index: 1000;
           }
 
-      header.LI-name-container{
+      /*header.LI-name-container{
         position: relative;
         z-index: 0;
-      }
+      }*/
 
       nav img {
         margin-left: 21px;
@@ -198,6 +205,14 @@
         padding: 21px;
         left: 21px;
       }
+      /*SOBRE MI*/
+      .line-height {
+            line-height: 45px;
+      }
+      .line-bottom {
+        border-bottom: 1px solid #b9abab;
+        padding-bottom: 27px!important;
+      }
       /*CONTACTO*/
       #contacto {
         margin-top: 42px;
@@ -209,4 +224,6 @@
         border-radius: 14px;
         margin-bottom: 28px;
       }
+
+    @media (min-width: 1224px) {
     }
