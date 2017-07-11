@@ -44,6 +44,9 @@
     nav {
       background: #333D66;
     }
+    nav ul a:hover {
+      background: rgb(79, 169, 193);
+    }
     .active {
         padding-top: 60px;
         position: relative;
