@@ -4,6 +4,36 @@ $( _ => {
   $(".button-collapse").sideNav();
   // EJECUTAR MI MODAL
   $('.modal').modal();
+
+
+  var lastScrollTop = 100;
+window.addEventListener("scroll", function(){
+  var currentScroll = window.scrollY;
+  if (currentScroll < 100) {
+  document.getElementById("header").classList.remove("header-height");
+} if (currentScroll > lastScrollTop){
+  document.getElementById("header").classList.add("header-height");
+  document.getElementById("li-about-me").classList.remove("active");
+
+} if( currentScroll >= 420 && currentScroll < 1160) {
+      document.getElementById("li-skills").classList.add("active");
+      document.getElementById("li-about-me").classList.remove("active");
+} if(currentScroll >= 1160) {
+  document.getElementById("li-skills").classList.add("active");
+  document.getElementById("li-about-me").classList.remove("active");
+  document.getElementById("li-projects").classList.remove("active");
+
+} if (currentScroll >= 1540) {
+  document.getElementById("li-projects").classList.add("active");
+  document.getElementById("li-skills").classList.remove("active");
+}
+    if (currentScroll >= 1600) {
+        document.getElementById("li-contact-me").classList.add("active");
+        document.getElementById("li-projects").classList.remove("active");
+
+    }
+
+
 })
 
 
