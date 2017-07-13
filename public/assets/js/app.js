@@ -44,5 +44,3 @@ const removeList = (addList, list1, list2, list3) => {
   $(list2).removeClass("bg-blue");
   $(list3).removeClass("bg-blue");
 }
-
-$('html,body').animate
