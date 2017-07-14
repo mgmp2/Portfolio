@@ -25,12 +25,12 @@ window.addEventListener("scroll", function(){
     $("#l-me").removeClass("bg-blue");
 } if (currentScroll > lastScrollTop){
     $('nav').addClass("header-height");
-} if( currentScroll >= 797) {
+} if( currentScroll >= 858) {
     removeList("#l-me", "#l-skills", "#l-project", "#l-contact");
-} if(currentScroll >= 1721) {
+} if(currentScroll >= 1590) {
   removeList("#l-skills", "#l-me", "#l-project", "#l-contact");
 
-} if (currentScroll >= 2479) {
+} if (currentScroll >= 2464) {
   removeList("#l-project", "#l-me", "#l-skills", "#l-contact");
 }if (currentScroll >= 3068) {
   removeList("#l-contact", "#l-me", "#l-skills", "#l-project");

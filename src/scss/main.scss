@@ -111,7 +111,13 @@ nav ul a:hover {
 #proyectos .square{
   position: relative;
   cursor: pointer;
-  height: 420px;
+  height: 44vh;
+  border: 1px solid red;
+  margin: 7px;
+  display: flow-root;
+  justify-content: center;
+  align-items: center;
+  padding: 51px;
 }
 #proyectos .square span {
   position: absolute;
