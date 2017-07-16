@@ -2,6 +2,8 @@
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Exo', sans-serif;
 }
@@ -10,15 +12,19 @@ h1, h2, h3,
 h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
 }
-h2 {
-    font-size: 2rem;
-}
 
 .bg-blue {
   background: #4fa9c1;
 }
+.bg-default {
+    background-color: #333D66;
+    transition: all .9s;
+}
+h2 {
+    font-size: 1.5em;
+}
 .header-height {
-  font-size: 14px;
+  font-size: 16px;
   transition: all 0.6s;
 }
 .laboratoria {
@@ -30,14 +36,6 @@ h2 {
 .pd-top {
   padding-top: 54px!important;
 }
-#banner, #sobre-mi, #habilidades, #proyectos,
-#contacto {
-  padding-top: 64px;
-  padding-bottom: 32px;
-}
-.card p {
-  font-size: 27px;
-}
 .justify-align {
     text-align: justify;
 }
@@ -48,9 +46,27 @@ p {
     font-size: 21px;
 }
 .title {
-    border-bottom: 3px solid rgb(79, 169, 193);
+    border-bottom: 3px solid #4fa9c1;
     display: inline-block;
     margin-bottom: 35px;
+}
+.load {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: url(../images/loading_miriam_mendoza.gif) center no-repeat #fff;
+}
+#banner, #sobre-mi, #habilidades, #proyectos,
+#contacto {
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+#sobre-mi,
+#proyectos {
+    background-color: #ededed;
 }
 
 /*MENU*/
@@ -58,7 +74,8 @@ header img {
   width: 56px;
 }
 nav {
-  background: #333D66;
+  background-color: #333D66;
+  box-shadow: none;
 }
 nav ul a:hover {
   background: rgb(79, 169, 193);
@@ -70,7 +87,7 @@ nav ul a:hover {
     height: auto;
     text-align: center;
 }
-.display-flex-end {
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,43 +124,38 @@ nav ul a:hover {
     width: 77px;
   }
 }
+// HABILIDADES
+#habilidades {
+    // background: url('../images/hands_typing_computer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 /*PROYECTOS*/
-#proyectos .square{
-  position: relative;
-  cursor: pointer;
-  height: 44vh;
-  border: 1px solid red;
-  margin: 7px;
-  display: flow-root;
-  justify-content: center;
-  align-items: center;
-  padding: 51px;
-}
-#proyectos .square span {
-  position: absolute;
-  top: 0;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  padding: 21px;
-}
-#proyectos .square span * {
-  visibility: hidden;
-}
-#proyectos .square span:hover {
-  background: #fff;
-  border: 1px solid #00fffc;
-  transition: all 0.5s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.square  {
+    height: 37vh;
+    padding-top: 14px;
+    &__btn {
+        height: 7vh;
+        .btn {
+            background-color: #4fa9c1;
+        }
+        &--first {
+        }
+    }
+    &__txt {
+        padding-top: 7px;
+        height: 12vh
+    }
 }
 // MODAL
 #proy-1, #proy-2, #proy-3,
 #proy-4, #proy-5 {
   width: 70vw!important;
   background-color: rgba(250, 250, 250, 0.54);
+  a {
+      color: #000;
+  }
 }
 
 .modal a {
@@ -155,8 +167,18 @@ nav ul a:hover {
   width: 35px;
 }
 /*CONTACTO */
-
-#contacto p {
+#contacto {
+    background-image: url(../images/laptop_hands_woman.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    h6 {
+        text-align: center;
+        font-size: 1.2em;
+        padding: 21px 0;
+    }
+}
+p {
     margin-bottom: 21px;
     padding: 14px;
     padding-left: 0;
@@ -164,10 +186,9 @@ nav ul a:hover {
 #write-here {
     display: flex;
     justify-content: space-around;
-}
-
-#write-here * {
-    border-radius: 14px;
+    * {
+        border-radius: 14px;
+    }
 }
 #contacto [class*="s6"] img {
     height: 140px;
@@ -176,7 +197,11 @@ nav ul a:hover {
 #write-here {
     margin-bottom: 21px;
 }
-
+#links-profesional {
+    img {
+        width: 77px;
+    }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   h1 {
@@ -229,7 +254,6 @@ nav ul a:hover {
   }
   /*BANNER*/
   #banner {
-     margin-top: 64px;
     background-position-y: 100%;
     align-items: initial;
     left: 21px;
@@ -248,12 +272,10 @@ nav ul a:hover {
     padding-bottom: 27px!important;
   }
   /*CONTACTO*/
-  #contacto {
-    margin-top: 42px;
-  }
+
   #contacto [class*="s4"] img {
     height: 82px;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     padding: 14px;
     border-radius: 14px;
     margin-bottom: 28px;
@@ -265,6 +287,14 @@ nav ul a:hover {
   }
 }
 @media (min-width: 1224px) {
+    nav {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    // PROYECTO
+    .square {
+        height: 42vh;
+    }
+    //  CONTACTO
     #links-profesional img {
         margin-right: 1vw;
     }
