@@ -1,6 +1,6 @@
 'use strict';
 $( _ => {
-    $('.load').fadeOut(1300);
+    $('.load').fadeOut(1500);
   // VER MI MENÚ
   $(".button-collapse").sideNav();
   // EJECUTAR MI MODAL
