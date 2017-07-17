@@ -1,40 +1,28 @@
 'use strict';
 $( _ => {
+    $('.load').fadeOut(1300);
   // VER MI MENÚ
   $(".button-collapse").sideNav();
   // EJECUTAR MI MODAL
   $('.modal').modal();
 })
 
-
-$('.port-imagen').mouseover( (event)=>{
-  $(event.currentTarget).children().addClass('visible');
-})
-
-$('.port-imagen').mouseout( (event)=>{
-  $(event.currentTarget).children().removeClass('visible');
-})
-
-
 let lastScrollTop = 100;
-
-window.addEventListener("scroll", function(){
+$(window).scroll( function(){
   const currentScroll = window.scrollY;
-  if (currentScroll < 100) {
-    $('nav').removeClass("header-height");
-    $("#l-me").removeClass("bg-blue");
-} if (currentScroll > lastScrollTop){
-    $('nav').addClass("header-height");
-} if( currentScroll >= 858) {
-    removeList("#l-me", "#l-skills", "#l-project", "#l-contact");
-} if(currentScroll >= 1590) {
-  removeList("#l-skills", "#l-me", "#l-project", "#l-contact");
-
-} if (currentScroll >= 2464) {
-  removeList("#l-project", "#l-me", "#l-skills", "#l-contact");
-}if (currentScroll >= 3068) {
-  removeList("#l-contact", "#l-me", "#l-skills", "#l-project");
-}
+  if (currentScroll < lastScrollTop) {
+      $('nav').removeClass("header-height bg-default'");
+      $("#l-me a").removeClass("bg-blue");
+  }  if( currentScroll >= 662) {
+      $('nav').addClass('bg-default');
+      removeList("#l-me a", "#l-skills a", "#l-project a", "#l-contact a");
+  } if(currentScroll >= 1563) {
+      removeList("#l-skills a", "#l-me a", "#l-project a", "#l-contact a");
+  } if (currentScroll >= 2408) {
+      removeList("#l-project a", "#l-me a", "#l-skills a", "#l-contact a");
+  }if (currentScroll >= 3137) {
+      removeList("#l-contact a", "#l-me a", "#l-skills a", "#l-project a");
+  }
     lastScrollTop = currentScroll;
 });
 

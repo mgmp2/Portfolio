@@ -13,7 +13,7 @@
     <!--Open Graph-->
     <meta name="keywords" content="HTML5,CSS3,Jquery, Portafolio, responsive, Laboratoria, Miriam Mendoza Pilco">
     <meta name="description" content="¡Hola! Soy Miriam Mendoza Pilco, estudiante de Laboratoria Laboratoria Perú. Apasionada por las nuevas tecnologías y herramientas web y móviles que contribuyan a una óptima experiencia para el cliente. Además, soy perseverante, responsable, solidaria, creativa, proactiva y deseosa de seguir aprediendo más, a fin de otorgar valor siempre.">
-    <meta name="author" content="Miriam Mendoza Pilco | Laboratoria Front End Developer Jr."
+    <meta name="author" content="Miriam Mendoza Pilco | Laboratoria Front End Developer Jr.">
 	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <!-- <meta name="autor" content="Portafolio | Miriam Mendoza Pilco">
@@ -28,6 +28,8 @@
 	  <meta property="og:description" content="A Front-end Developer's Portfolio"/> -->
   </head>
   <body>
+      <!-- CARGA -->
+      <div class="load"></div>
       <!-- MI MENÚ -->
       <header>
         <nav>
@@ -53,7 +55,7 @@
       <section id="banner">
           <div class="card">
             <h1 class="white-text">Miriam Mendoza Pilco</h1>
-            <p class="right-align grey-text text-lighten-1">Front-End Developer Jr.</p>
+            <h2 class="right-align grey-text text-lighten-1">Front-End Developer Jr.</h2>
           </div>
       </section>
       <!-- Conóceme -->
@@ -76,11 +78,10 @@
           <div class="row line-bottom">
             <div class="col m6 push-m6 s12">
                 <div class="col s12 center-align">
-                  <p></p>
-                  <div class="col s12 m2">
+                  <div class="col s12 m2 l4">
                     <a href="https://www.facebook.com/laboratoria.la/" target="_blank"><img src="assets/images/laboraotoria_peru_miriam_mendoza.png" alt="Laboratoria Perú Miriam Mendoza" class="pd-top"></a>
                   </div>
-                  <div class="col s12 m10">
+                  <div class="col s12 m10 l8">
                     <p>Reconocimientos</p>
                     <div class="col s6">
 
@@ -103,7 +104,7 @@
             <div class="row">
                 <h3 class="title">Mis habilidades</h3>
             </div>
-            <div class="row display-flex-end">
+            <div class="row flex">
                 <div class="col s12 m6 l4">
                     <div class="col s12 m7 push-m3">
                         <img src="assets/images/html_habilidades_miriam_mendoza.png" alt="miriam mendoza laboratoria html habilidad" class="responsive-img">
@@ -162,80 +163,90 @@
               </div>
               <div class="row">
                 <!-- PRIMER PROYECTO -->
-                  <div class="col s12 m6 l4">
-                      <div class="square overflow">
-                            <h4 class="">Gas Finder</h4>
-                            <p class="black-text">Proyecto realizado con API</p>
+                <div class="col s12 m6 l4">
+                  <div class="square overflow center-align card hoverable card">
+                        <h4 class="center-align">Yape</h4>
+                        <p class="black-text square__txt square__txt">Maquetado de la aplicación realizado por el banco BCP</p>
+                        <div class="square__btn flex">
                             <a class="waves-effect waves-light btn white-text" href="#proy-1">Ver Detalle</a>
-                      </div>
-                      <div id="proy-1" class="modal center-align">
-                          <div class="modal-content">
-                            <a href="https://mgmp2.github.io/GasFinder/" target="_blank">Ver Demo</a>
-                            <a href="https://github.com/mgmp2/GasFinder" target="_blank">Ver Código</a>
-                            <a rel='nofollow' href='http://www.qrcode-generator.de' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FGasFinder%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='codigo qr gas finder miriam mendoza'></a>
-                          </div>
-                    </div>
-                  </div>
-                    <!-- SEGUNDO PROYECTO -->
-                  <div class="col s12 m6 l4">
-                    <div class="square overflow">
-                          <h4 class="">Gas Finder</h4>
-                          <p class="black-text">Proyecto realizado con API</p>
-                          <a class="waves-effect waves-light btn white-text" href="#proy-1">Ver Detalle</a>
-                    </div>
-                    <div id="proy-1" class="modal center-align">
-                        <div class="modal-content">
-                          <a href="https://mgmp2.github.io/GasFinder/" target="_blank">Ver Demo</a>
-                          <a href="https://github.com/mgmp2/GasFinder" target="_blank">Ver Código</a>
-                          <a rel='nofollow' href='http://www.qrcode-generator.de' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FGasFinder%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='codigo qr gas finder miriam mendoza'></a>
                         </div>
-                    </div>
                   </div>
-                  <!-- TERCER PROYECTO -->
-                  <div class="col s12 m6 l4">
-                    <div class="square overflow">
-                          <h4 class="">Gas Finder</h4>
-                          <p class="black-text">Proyecto realizado con API</p>
-                          <a class="waves-effect waves-light btn white-text" href="#proy-1">Ver Detalle</a>
+                  <div id="proy-1" class="modal center-align">
+                      <div class="modal-content">
+                        <a href="https://yape-sprint5.herokuapp.com/" target="_blank">Ver Demo</a>
+                        <a href="https://github.com/mgmp2/yape" target="_blank">Ver Código</a>
+                        <img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fyape-sprint5.herokuapp.com%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='smash faces proyecto en demo'><a href='https://yape-sprint5.herokuapp.com/' border='0' style='cursor:default'  rel='nofollow'></a>
+                      </div>
+                </div>
+                </div>
+                <!-- SEGUNDO PROYECTO -->
+                <div class="col s12 m6 l4">
+                    <div class="square overflow center-align card hoverable card">
+                          <h4 class="center-align">Smash Faces</h4>
+                          <p class="black-text square__txt">Identifica a las chicas de Laboratoria</p>
+                          <div class="square__btn ">
+                              <a class="waves-effect waves-light btn white-text" href="#proy-2">Ver Detalle</a>
+                          </div>
                     </div>
-                    <div id="proy-1" class="modal center-align">
+                    <div id="proy-2" class="modal center-align">
                         <div class="modal-content">
-                          <a href="https://mgmp2.github.io/GasFinder/" target="_blank">Ver Demo</a>
-                          <a href="https://github.com/mgmp2/GasFinder" target="_blank">Ver Código</a>
-                          <a rel='nofollow' href='http://www.qrcode-generator.de' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FGasFinder%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='codigo qr gas finder miriam mendoza'></a>
+                          <a href="https://mgmp2.github.io/smashFaces/" target="_blank">Ver Demo</a>
+                          <a href="https://github.com/mgmp2/smashFaces" target="_blank">Ver Código</a>
+                          <a rel='nofollow' href='https://mgmp2.github.io/smashFaces/' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FsmashFaces%2F&chs=180x180&choe=UTF-8&chld=L|2' alt=''></a>
                         </div>
-                    </div>
                   </div>
-                  <!-- CUARTO PROYECTO -->
-                  <div class="col s12 m6 l6">
-                      <div class="square overflow">
-                            <h4 class="">Gas Finder</h4>
-                            <p class="black-text">Proyecto realizado con API</p>
-                            <a class="waves-effect waves-light btn white-text" href="#proy-1">Ver Detalle</a>
+                </div>
+                <!-- TERCER PROYECTO -->
+                <div class="col s12 m6 l4">
+                  <div class="square overflow center-align card hoverable card">
+                        <h4 class="center-align">Slide Coder</h4>
+                        <p class="black-text square__txt">Publica como en las redes sociales</p>
+                        <div class="square__btn">
+                            <a class="waves-effect waves-light btn white-text" href="#proy-3">Ver Detalle</a>
+                        </div>
+                  </div>
+                  <div id="proy-3" class="modal center-align">
+                      <div class="modal-content">
+                        <a href="https://mgmp2.github.io/Slide-coder/" target="_blank">Ver Demo</a>
+                        <a href="https://github.com/mgmp2/Slide-coder" target="_blank">Ver Código</a>
+                        <a rel='nofollow' href='https://mgmp2.github.io/Slide-coder/' border='0' style='cursor:default'></a><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FSlide-coder%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='slide coder código qr'>
                       </div>
-                      <div id="proy-1" class="modal center-align">
-                          <div class="modal-content">
-                            <a href="https://mgmp2.github.io/GasFinder/" target="_blank">Ver Demo</a>
-                            <a href="https://github.com/mgmp2/GasFinder" target="_blank">Ver Código</a>
-                            <a rel='nofollow' href='http://www.qrcode-generator.de' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FGasFinder%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='codigo qr gas finder miriam mendoza'></a>
-                          </div>
-                    </div>
+                </div>
+                </div>
+                <!-- CUARTO PROYECTO -->
+                <div class="col s12 m6 l4 push-l2">
+                  <div class="square overflow center-align card hoverable card">
+                        <h4 class="center-align">Lab Car</h4>
+                        <p class="black-text square__txt">Maquetado de la aplicación realizado por el banco BCP</p>
+                        <div class="square__btn">
+                            <a class="waves-effect waves-light btn white-text" href="#proy-4">Ver Detalle</a>
+                        </div>
                   </div>
-                  <!-- QUINTO PROYECTO -->
-                  <div class="col s12 m6 l6">
-                      <div class="square overflow">
-                            <h4 class="">Gas Finder</h4>
-                            <p class="black-text">Proyecto realizado con API</p>
-                            <a class="waves-effect waves-light btn white-text" href="#proy-1">Ver Detalle</a>
+                  <div id="proy-4" class="modal center-align">
+                      <div class="modal-content">
+                        <a href="https://mgmp2.github.io/GroupImportant/" target="_blank">Ver Demo</a>
+                        <a href="https://github.com/mgmp2/GroupImportant" target="_blank">Ver Código</a>
+                        <a rel='nofollow' href='https://mgmp2.github.io/GroupImportant/' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FGroupImportant%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='lab car proyecto código qr'></a>
                       </div>
-                      <div id="proy-1" class="modal center-align">
-                          <div class="modal-content">
-                            <a href="https://mgmp2.github.io/GasFinder/" target="_blank">Ver Demo</a>
-                            <a href="https://github.com/mgmp2/GasFinder" target="_blank">Ver Código</a>
-                            <a rel='nofollow' href='http://www.qrcode-generator.de' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FGasFinder%2F&chs=180x180&choe=UTF-8&chld=L|2' alt='codigo qr gas finder miriam mendoza'></a>
-                          </div>
-                    </div>
+                </div>
+                </div>
+                <!-- QUINTO PROYECTO -->
+                <div class="col s12 m6 l4 push-l2">
+                  <div class="square overflow center-align card hoverable card">
+                        <h4 class="center-align">Portafolio</h4>
+                        <p class="black-text square__txt">Un diseño diferente para tu portafolio</p>
+                        <div class="square__btn">
+                            <a class="waves-effect waves-light btn white-text" href="#proy-5">Ver Detalle</a>
+                        </div>
                   </div>
+                  <div id="proy-5" class="modal center-align">
+                      <div class="modal-content">
+                        <a href="https://mgmp2.github.io/PortfolioMaterialize/" target="_blank">Ver Demo</a>
+                        <a href="https://github.com/mgmp2/PortfolioMaterialize" target="_blank">Ver Código</a>
+                        <a rel='nofollow' href='https://mgmp2.github.io/PortfolioMaterialize/' border='0' style='cursor:default'></a><img src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmgmp2.github.io%2FPortfolioMaterialize%2F&chs=180x180&choe=UTF-8&chld=L|2' alt=''>
+                      </div>
+                </div>
+                </div>
               </div>
           </div>
       </section>
@@ -250,30 +261,30 @@
               <div class="row">
                   <div class="col s12 l6">
                       <div class="col s12 ">
-                          <p class="center-align weight-700">¡Gracias por llegar hasta aquí!</p>
+                          <h5 class="center-align weight-700">¡Gracias por llegar hasta aquí!</h5>
                           <p class="justify-align">Espero haber superado tus expectativas y que mi trabajo te haya gustado, porque con la misma pasión me encantaría integrarme a tu organización, y aportar con mis habilidades y las tecnologías de desarrollo web y móvil que he aprendido y que seguiré aprendiendo. </p>
                       </div>
 
 
                   </div>
-                  <div class="col s12 l6">
-                    <div class="col s4 m4" id="links-profesional">
+                  <div class="col s12 l6" id="links-profesional">
+                    <div class="col s4 m4">
                       <a  href="https://github.com/mgmp2" target="_blank"><img src="assets/icons/github.png" alt="github" class="responsive-img"></a>
                     </div>
                     <div class="col s4 m4 center-align">
                       <a  href="https://www.linkedin.com/in/miriam-mendoza-pilco/" target="_blank"><img src="assets/icons/linkedin_miriam_mendoza.png" alt="curriculum vitae" class="responsive-img"></a>
                     </div>
-                    <div class="col s4 m4 left-align">
+                    <div class="col s4 m4 right-align">
                       <a  href="assets/docs/cv_miriam_mendoza.pdf" target="_blank"><img src="assets/icons/cv.png" alt="curriculum vitae" class="responsive-img"></a>
                     </div>
 
                   </div>
                   <div class="col s12 l6">
-                    <div class="col s12 l5"><p class=" weight-700">Escríbeme aquí:</p></div>
+                    <div class="col s12 l5"><h6 class=" weight-700">Escríbeme aquí:</h6></div>
                     <div class="col s12 l7" id="write-here">
-                        <a class="btn btn-floating grey darken-4 btn-large pulse" href="mailto:miriammp1997@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        <a class="btn btn-floating grey darken-4 btn-large pulse" href="skype:myryan_008?call"><i class="fa fa-skype" aria-hidden="true"></i></a>
-                        <a class="btn btn-floating grey darken-4 btn-large pulse" href="tel:+51938869970"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a class="btn btn-floating blue lighten-1 btn-large pulse" href="mailto:miriammp1997@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a class="btn btn-floating blue lighten-1 btn-large pulse" href="skype:myryan_008?call"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                        <a class="btn btn-floating blue lighten-1 btn-large pulse" href="tel:+51938869970"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
                     </div>
                   </div>
 
@@ -281,6 +292,11 @@
               </div>
           </div>
       </section>
+      <footer class=" cyan lighten-1">
+        <div class="container center-align">
+        <span class="white-text">Copyright &copy; 2017 · Miriam Mendoza Pilco ·</span>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
