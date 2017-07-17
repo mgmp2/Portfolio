@@ -77,12 +77,13 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
-}
-header img {
+  img {
   width: 56px;
+  }
 }
 nav {
   box-shadow: none;
+  background-color: #333D66;
 }
 .side-nav li > a:hover {
   background: rgba(79, 169, 193, 0.5);
