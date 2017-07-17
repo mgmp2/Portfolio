@@ -60,6 +60,50 @@ p {
     background: url(../images/loading_miriam_mendoza.gif) center no-repeat #fff;
 }
 
+
+.sprite {
+    background-image: url(../images/habilidades_miriam_mendoza_1.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.bootstrap_habilidades_miriam_mendoza {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -5px;
+}
+
+.css_habilidades_miriam_mendoza {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -5px;
+}
+
+.foundation_habilidades_miriam_mendoza {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -143px;
+}
+
+.gulp_habilidades_miriam_mendoza {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -143px;
+}
+
+.html_habilidades_miriam_mendoza {
+    width: 128px;
+    height: 128px;
+    background-position: -281px -5px;
+}
+
+.materialize_habilidades_miriam_mendoza {
+    width: 128px;
+    height: 128px;
+    background-position: -281px -143px;
+}
+
+
 #banner, #sobre-mi, #habilidades, #proyectos,
 #contacto {
   padding-top: 64px;
