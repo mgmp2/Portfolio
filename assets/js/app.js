@@ -1,6 +1,11 @@
 'use strict';
-$( _ => {
-    $('.load').fadeOut(1500);
+
+$(window).load(function() {
+		$('.load').fadeOut("slow");
+	});
+
+
+$(document).ready(function(){
   // VER MI MENÚ
   $(".button-collapse").sideNav();
   // EJECUTAR MI MODAL
