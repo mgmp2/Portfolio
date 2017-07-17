@@ -219,10 +219,17 @@ p {
     #sobre-mi, #contacto {
       height: auto;
     }
+    /* Sobre mí */
+    #sobre-mi {
+      a img {
+        width: 8vw;
+      }
+    }
     /*CONTACTO*/
     #contacto [class*="s6"] img {
         height: 182px;
     }
+
     // MODAL
     #proy-1, #proy-2, #proy-3,
     #proy-4, #proy-5 {
@@ -259,6 +266,14 @@ p {
     left: 21px;
   }
   /*SOBRE MI*/
+  #sobre-mi {
+    p {
+      margin-bottom: 16px;
+    }
+    a img {
+      width: 5vw;
+    }
+  }
   .line-height {
         line-height: 45px;
   }
