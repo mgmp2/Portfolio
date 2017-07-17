@@ -34,7 +34,7 @@ h2 {
   font-weight: 700;
 }
 .pd-top {
-  padding-top: 54px!important;
+  padding-top: 10vh!important;
 }
 .justify-align {
     text-align: justify;
@@ -59,6 +59,7 @@ p {
     z-index: 1000;
     background: url(../images/loading_miriam_mendoza.gif) center no-repeat #fff;
 }
+
 #banner, #sobre-mi, #habilidades, #proyectos,
 #contacto {
   padding-top: 64px;
@@ -70,6 +71,13 @@ p {
 }
 
 /*MENU*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 header img {
   width: 56px;
 }
@@ -77,8 +85,8 @@ nav {
   background-color: #333D66;
   box-shadow: none;
 }
-nav ul a:hover {
-  background: rgb(79, 169, 193);
+.side-nav li > a:hover {
+  background: rgba(79, 169, 193, 0.5);
 }
 .active {
     padding-top: 60px;
@@ -120,17 +128,10 @@ nav ul a:hover {
 /*ABOUT ME*/
 #sobre-mi {
   a img {
-    padding-top: 21px;
     width: 77px;
   }
 }
-// HABILIDADES
-#habilidades {
-    // background: url('../images/hands_typing_computer.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 
-}
 /*PROYECTOS*/
 .square  {
     height: 37vh;
@@ -242,13 +243,6 @@ p {
         font-size: 21px;
       }
       /*MENU*/
-      header {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-      }
 
   nav img {
     margin-left: 21px;
@@ -291,11 +285,11 @@ p {
     nav {
         background-color: rgba(255, 255, 255, 0);
     }
-    // PROYECTO
+    /* PROYECTO */
     .square {
         height: 42vh;
     }
-    //  CONTACTO
+    /* CONTACTO */
     #links-profesional img {
         margin-right: 1vw;
     }
