@@ -14,18 +14,22 @@ $(document).ready(function(){
 
 let lastScrollTop = 100;
 $(window).scroll( function(){
+	const me 		= $('#sobre-mi').offset().top;
+	const skill = $('#habilidades').offset().top;
+	const proj	= $('#proyectos').offset().top;
+	const contac = $('#contacto').offset().top;
   const currentScroll = window.scrollY;
   if (currentScroll < lastScrollTop) {
       $('nav').removeClass("header-height bg-default'");
       $("#l-me a").removeClass("bg-blue");
-  }  if( currentScroll >= 662) {
+  }  if( currentScroll >= me) {
       $('nav').addClass('bg-default');
       removeList("#l-me a", "#l-skills a", "#l-project a", "#l-contact a");
-  } if(currentScroll >= 1563) {
+  } if(currentScroll >= skill) {
       removeList("#l-skills a", "#l-me a", "#l-project a", "#l-contact a");
-  } if (currentScroll >= 2408) {
+  } if (currentScroll >= proj) {
       removeList("#l-project a", "#l-me a", "#l-skills a", "#l-contact a");
-  }if (currentScroll >= 3137) {
+  }if (currentScroll >= contac) {
       removeList("#l-contact a", "#l-me a", "#l-skills a", "#l-project a");
   }
     lastScrollTop = currentScroll;

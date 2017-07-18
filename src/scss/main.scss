@@ -135,6 +135,12 @@ nav {
   width: 100vw;
   box-shadow: none;
   background-color: #333D66;
+  .brand-logo {
+    margin-left: 5vw;
+  }
+  #lista {
+    margin-right: 5vw;
+  }
 }
 .side-nav li > a:hover {
   background: rgba(79, 169, 193, 0.5);
@@ -161,10 +167,7 @@ nav {
 #banner {
   margin: 0;
   height: 100vh;
-  background-image: url(../images/miriam_mendoza_pilco.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,8 +175,9 @@ nav {
 }
 #banner .card {
   width: 90%;
+  margin: 0 auto;
   text-align: center;
-  background-color: rgba(9, 19, 24, 0.55); //BUSCAR COLORES EN MATERIALIZE.CSS
+  background-color: #3c4e73;
   padding: 14px;
 }
 /*ABOUT ME*/
@@ -257,8 +261,7 @@ p {
     }
 }
 footer {
-  height: 5vh;
-
+  height: 7vh;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
