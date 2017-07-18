@@ -20,8 +20,17 @@ h4, h5, h6 {
     background-color: #333D66;
     transition: all .9s;
 }
+h1 {
+  font-size: 14vw;
+}
 h2 {
     font-size: 1.5em;
+}
+h3 {
+  font-size: 9.5vw;
+}
+p {
+    font-size: 5vw;
 }
 .header-height {
   font-size: 16px;
@@ -41,9 +50,6 @@ h2 {
 }
 .weight-700 {
     font-weight: 700;
-}
-p {
-    font-size: 21px;
 }
 .title {
     border-bottom: 3px solid #4fa9c1;
@@ -126,6 +132,7 @@ header {
   }
 }
 nav {
+  width: 100vw;
   box-shadow: none;
   background-color: #333D66;
 }
@@ -258,8 +265,11 @@ footer {
   h1 {
     font-size: 6rem;
   }
+  h3 {
+    font-size: 5vw;
+  }
   p {
-      font-size: 17px;
+      font-size: 2vw;
   }
     #write-here {
         margin-bottom: 28px;
@@ -292,16 +302,18 @@ footer {
       h1 {
         font-size: 6rem;
       }
-        h3 {
+      h3 {
             font-size: 2.8rem;
-        }
+      }
       p {
         font-size: 21px;
       }
       /*MENU*/
-
-  nav img {
+  nav {
+    width: 100%;
+  img {
     margin-left: 21px;
+  }
   }
   /*BANNER*/
   #banner {
@@ -317,7 +329,7 @@ footer {
   /*SOBRE MI*/
   #sobre-mi {
     p {
-      margin-bottom: 16px;
+      margin-bottom: 1.25vw;
     }
     a img {
       width: 5vw;
@@ -357,4 +369,5 @@ footer {
     #links-profesional img {
         margin-right: 1vw;
     }
+
 }
