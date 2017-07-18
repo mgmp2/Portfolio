@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Exo|Orbitron');
+// @import url('https://fonts.googleapis.com/css?family=Exo|Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Didact+Gothic');
 * {
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Arimo', sans-serif;
 }
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 .bg-blue {
@@ -28,6 +29,7 @@ h2 {
 }
 h3 {
   font-size: 9.5vw;
+  text-transform: uppercase;
 }
 p {
     font-size: 5vw;
@@ -52,7 +54,7 @@ p {
     font-weight: 700;
 }
 .title {
-    border-bottom: 3px solid #4fa9c1;
+    // border-bottom: 3px solid #4fa9c1;
     display: inline-block;
     margin-bottom: 35px;
 }
@@ -64,6 +66,7 @@ p {
     height: 100vh;
     z-index: 1000;
     background: url(../images/loading_miriam_mendoza.gif) center no-repeat #fff;
+    background-size: 140px;
 }
 
 /* SPRITE */
@@ -177,7 +180,7 @@ nav {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  background-color: #3c4e73;
+  background-color: black;
   padding: 14px;
 }
 /*ABOUT ME*/
@@ -331,8 +334,10 @@ footer {
   }
   /*SOBRE MI*/
   #sobre-mi {
+    height: 100vh;
     p {
       margin-bottom: 1.25vw;
+      line-height: 1.5;
     }
     a img {
       width: 5vw;
@@ -341,10 +346,11 @@ footer {
   .line-height {
         line-height: 45px;
   }
-  .line-bottom {
-    border-bottom: 1px solid #b9abab;
-    padding-bottom: 27px!important;
-  }
+  // .line-bottom {
+  //   // border-bottom: 1px solid #b9abab;
+  //   padding-bottom: 27px!important;
+  //   padding-top: 0;
+  // }
   /*CONTACTO*/
 
   #contacto [class*="s4"] img {

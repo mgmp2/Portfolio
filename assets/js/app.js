@@ -12,7 +12,7 @@ $(document).ready(function(){
   $('.modal').modal();
 })
 
-let lastScrollTop = 100;
+let lastScrollTop = 200;
 $(window).scroll( function(){
 	const me 		= $('#sobre-mi').offset().top;
 	const skill = $('#habilidades').offset().top;
@@ -20,9 +20,9 @@ $(window).scroll( function(){
 	const contac = $('#contacto').offset().top;
   const currentScroll = window.scrollY;
   if (currentScroll < lastScrollTop) {
-      $('nav').removeClass("header-height bg-default'");
-      $("#l-me a").removeClass("bg-blue");
-  }  if( currentScroll >= me) {
+    $("#l-me a").removeClass("bg-blue");
+    $('nav').removeClass("header-height bg-default");
+  } if( currentScroll >= me) {
       $('nav').addClass('bg-default');
       removeList("#l-me a", "#l-skills a", "#l-project a", "#l-contact a");
   } if(currentScroll >= skill) {
@@ -32,7 +32,6 @@ $(window).scroll( function(){
   }if (currentScroll >= contac) {
       removeList("#l-contact a", "#l-me a", "#l-skills a", "#l-project a");
   }
-    lastScrollTop = currentScroll;
 });
 
 const removeList = (addList, list1, list2, list3) => {
@@ -41,3 +40,12 @@ const removeList = (addList, list1, list2, list3) => {
   $(list2).removeClass("bg-blue");
   $(list3).removeClass("bg-blue");
 }
+
+
+// $("html, body").animate({ scrollTop: $('#proyectos').offset().top}, 1000);
+
+
+// $('#lista').on('click', (e)=> {
+// e.preventDefault();
+// console.log(e.target.attr("href"));
+// })
