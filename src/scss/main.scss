@@ -8,12 +8,15 @@
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
 }
+$textPrimary : #039be5;
+
 html {
   color: rgba(0, 0, 0, 0.72)
 }
 h1, h2, h3,
 h4, h5, h6 {
     font-family: 'Didact Gothic', sans-serif;
+    font-weight: 800;
 }
 
 .bg-blue {
@@ -36,6 +39,14 @@ h3 {
 p {
     font-size: 5vw;
 }
+hr {
+  margin-left: 0.9%;
+  width: 68px;
+  border: 0;
+  display: inline-block;
+  border-bottom: 3px solid $textPrimary;
+  margin-bottom: 3%;
+}
 .header-height {
   font-size: 16px;
   transition: all 0.6s;
@@ -55,11 +66,7 @@ p {
 .weight-700 {
     font-weight: 700;
 }
-.title {
-    // border-bottom: 3px solid #4fa9c1;
-    display: inline-block;
-    margin-bottom: 35px;
-}
+
 .load {
     position: fixed;
     left: 0px;
@@ -121,11 +128,12 @@ p {
   padding-bottom: 64px;
 }
 #reconocimiento {
-  padding-top: 21px;
+  padding-top: 28px;
+  padding-bottom: 21px;
 }
 #sobre-mi,
 #proyectos {
-    background-color: #e5e5e5;
+    background-color: #f5f5f3;
 }
 
 /*MENU*/
@@ -176,7 +184,7 @@ nav {
   margin: 0;
   height: 100vh;
   // background-color: black;
-  background-image: url(../images/squad_important_front_end_coder.png);
+  background-image: url(../images/portada_placa_procesador_tecnologia.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 0vh!important;
@@ -184,23 +192,35 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  h2 {
+
+  }
 }
 #banner .card {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0);
   padding: 14px;
 }
 /*ABOUT ME*/
 #sobre-mi {
-  a img {
-    width: 77px;
+  h3 {
+    padding-left: 0.5%;
+  }
+  h4 {
+    margin: 0;
+  }
+  h5 {
+    color: $textPrimary;
+  }
+  img {
+    padding-top: 2%;
   }
 }
 /* HABILIDADES */
 #habilidades {
-  height: 120vh;
+  // height: 120vh;
 }
 
 /*PROYECTOS*/
@@ -261,7 +281,7 @@ nav {
     }
 }
 p {
-    margin-bottom: 21px;
+    margin-bottom: -7px;
     padding: 14px;
     padding-left: 0;
 }
@@ -297,6 +317,7 @@ footer {
   }
   h3 {
     font-size: 5vw;
+    text-transform: uppercase;
   }
   p {
       font-size: 2vw;
@@ -329,14 +350,12 @@ footer {
 /* Medium devices (desktops, 992px and up) */
     @media (min-width: 992px) {
 
-      h1 {
-        font-size: 6vw;
-      }
+
       h2 {
-        font-size: 4vw;
+        font-size: 3vw;
       }
       h3 {
-            font-size: 3.8vw;
+            font-size: 2.5vw;
       }
       p {
         font-size: 21px;
@@ -361,7 +380,6 @@ footer {
   }
   /*SOBRE MI*/
   #sobre-mi {
-    height: 100vh;
     p {
       margin-bottom: 1.25vw;
       line-height: 1.5;
@@ -399,7 +417,7 @@ footer {
     }
     /* PROYECTO */
     .square {
-        height: 42vh;
+        height: 32vh;
     }
     /* CONTACTO */
     #links-profesional img {
