@@ -8,7 +8,9 @@
     box-sizing: border-box;
     font-family: 'Arimo', sans-serif;
 }
-
+html {
+  color: rgba(0, 0, 0, 0.72)
+}
 h1, h2, h3,
 h4, h5, h6 {
     font-family: 'Didact Gothic', sans-serif;
@@ -113,14 +115,18 @@ p {
 
 
 // GENERAL
-#banner, #sobre-mi, #reconocimiento, #habilidades, #proyectos,
+#banner, #sobre-mi, #habilidades, #proyectos,
 #contacto {
   padding-top: 64px;
   padding-bottom: 64px;
 }
+#reconocimiento {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 #sobre-mi,
 #proyectos {
-    background-color: #ededed;
+    background-color: #e5e5e5;
 }
 
 /*MENU*/
@@ -170,7 +176,11 @@ nav {
 #banner {
   margin: 0;
   height: 100vh;
-  background-color: black;
+  // background-color: black;
+  background-image: url(../images/woman_coder_front_end_developer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 6vh!important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +190,7 @@ nav {
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 14px;
 }
 /*ABOUT ME*/
@@ -225,6 +235,14 @@ nav {
 }
 .port-imagen img {
   width: 35px;
+}
+#reconocimiento {
+  background-image: url(../images/girl_solution_coder.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+
 }
 /*CONTACTO */
 #contacto {
@@ -323,7 +341,7 @@ footer {
   }
   /*BANNER*/
   #banner {
-    background-position-y: 100%;
+    background-position-y: -35px!important;
     align-items: initial;
     left: 21px;
   }
