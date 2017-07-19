@@ -15,9 +15,9 @@ $(document).ready(function(){
 let lastScrollTop = 200;
 $(window).scroll( function(){
 	const me 		= $('#sobre-mi').offset().top;
-	const skill = $('#habilidades').offset().top;
-	const proj	= $('#proyectos').offset().top;
-	const contac = $('#contacto').offset().top;
+	const skill = $('#habilidades').offset().top -100;
+	const proj	= $('#proyectos').offset().top - 50;
+	const contac = $('#contacto').offset().top - 400;
   const currentScroll = window.scrollY;
   if (currentScroll < lastScrollTop) {
     $("#l-me a").removeClass("bg-blue");
@@ -40,12 +40,9 @@ const removeList = (addList, list1, list2, list3) => {
   $(list2).removeClass("bg-blue");
   $(list3).removeClass("bg-blue");
 }
+// ANIMATED THE SCROLL FOR MY LIST
 
-
-// $("html, body").animate({ scrollTop: $('#proyectos').offset().top}, 1000);
-
-
-// $('#lista').on('click', (e)=> {
-// e.preventDefault();
-// console.log(e.target.attr("href"));
-// })
+$('nav li a').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000, 'linear');
+});

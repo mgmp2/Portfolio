@@ -27,10 +27,10 @@ h1 {
   font-size: 14vw;
 }
 h2 {
-    font-size: 1.5em;
+    font-size: 10vw;
 }
 h3 {
-  font-size: 9.5vw;
+  font-size: 9vw;
   text-transform: uppercase;
 }
 p {
@@ -121,8 +121,7 @@ p {
   padding-bottom: 64px;
 }
 #reconocimiento {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 21px;
 }
 #sobre-mi,
 #proyectos {
@@ -177,10 +176,10 @@ nav {
   margin: 0;
   height: 100vh;
   // background-color: black;
-  background-image: url(../images/woman_coder_front_end_developer.png);
+  background-image: url(../images/squad_important_front_end_coder.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right 6vh!important;
+  background-position: center 0vh!important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,6 +197,10 @@ nav {
   a img {
     width: 77px;
   }
+}
+/* HABILIDADES */
+#habilidades {
+  height: 120vh;
 }
 
 /*PROYECTOS*/
@@ -287,7 +290,10 @@ footer {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   h1 {
-    font-size: 6rem;
+    font-size: 6vw;
+  }
+  h2 {
+    font-size: 5.5vw;
   }
   h3 {
     font-size: 5vw;
@@ -324,10 +330,13 @@ footer {
     @media (min-width: 992px) {
 
       h1 {
-        font-size: 6rem;
+        font-size: 6vw;
+      }
+      h2 {
+        font-size: 4vw;
       }
       h3 {
-            font-size: 2.8rem;
+            font-size: 3.8vw;
       }
       p {
         font-size: 21px;
