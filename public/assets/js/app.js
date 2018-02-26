@@ -1,3 +1,5 @@
+var $   = require('jquery');
+
 'use strict';
 $( _ => {
   // VER MI MENÚ
